@@ -1,4 +1,4 @@
-thanks
+thanks sameersbn/docker-openfire
 
 # babim/openfire:4.0.1
 
