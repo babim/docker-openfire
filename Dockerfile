@@ -1,4 +1,4 @@
-FROM babim/debianbase
+FROM babim/ubuntubase
 
 ENV OPENFIRE_VERSION=4.0.1 \
     OPENFIRE_USER=openfire \
