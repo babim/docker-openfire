@@ -10,8 +10,15 @@ RUN apt-get update \
  && wget "http://download.igniterealtime.org/openfire/openfire_${OPENFIRE_VERSION}_all.deb" -O /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
  && dpkg -i /tmp/openfire_${OPENFIRE_VERSION}_all.deb \
  && mv /var/lib/openfire/plugins/admin /usr/share/openfire/plugin-admin \
- && rm -rf openfire_${OPENFIRE_VERSION}_all.deb \
- && rm -rf /var/lib/apt/lists/*
+ && rm -f openfire_${OPENFIRE_VERSION}_all.deb \
+
+RUN apt-get clean && \
+    apt-get autoclean && \
+    apt-get autoremove -y && \
+    rm -rf /build && \
+    rm -rf /tmp/* /var/tmp/* && \
+    rm -rf /var/lib/apt/lists/* && \
+    rm -f /etc/dpkg/dpkg.cfg.d/02apt-speedup
 
 COPY entrypoint.sh /sbin/entrypoint.sh
 RUN chmod 755 /sbin/entrypoint.sh
