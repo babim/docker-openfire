@@ -1,7 +1,6 @@
-FROM sameersbn/ubuntu:14.04.20160121
-MAINTAINER sameer@damagehead.com
+FROM babim/debianbase
 
-ENV OPENFIRE_VERSION=3.10.3 \
+ENV OPENFIRE_VERSION=4.0.1 \
     OPENFIRE_USER=openfire \
     OPENFIRE_DATA_DIR=/var/lib/openfire \
     OPENFIRE_LOG_DIR=/var/log/openfire
