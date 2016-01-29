@@ -136,4 +136,3 @@ docker exec -it openfire bash
 # References
 
   * http://www.igniterealtime.org/projects/openfire/
-  * https://library.linode.com/communications/xmpp/openfire/ubuntu-12.04-precise-pangolin
