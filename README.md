@@ -1,6 +1,6 @@
 thanks sameersbn/docker-openfire
 
-# babim/openfire:4.0.1
+# babim/openfire
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
