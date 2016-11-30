@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/babim/openfire.svg)](https://microbadger.com/images/babim/openfire "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/openfire.svg)](https://microbadger.com/images/babim/openfire "Get your own version badge on microbadger.com")
+
 thanks sameersbn/docker-openfire
 
 # babim/openfire
