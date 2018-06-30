@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# option with entrypoint
+if [ -f "/option.sh" ]; then /option.sh; fi
+
 rewire_openfire() {
   rm -rf /usr/share/openfire/{conf,resources/security,lib/log4j.xml}
   ln -sf ${OPENFIRE_DATA_DIR}/conf /usr/share/openfire/
